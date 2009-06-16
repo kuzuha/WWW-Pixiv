@@ -3,10 +3,10 @@ use warnings;
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
-    NAME                => 'HTTP::Application',
+    NAME                => 'Net::Pixiv',
     AUTHOR              => 'Kuzuha SHINODA <kuzuha01@hotmail.com>',
-    VERSION_FROM        => 'lib/HTTP/Application.pm',
-    ABSTRACT_FROM       => 'lib/HTTP/Application.pm',
+    VERSION_FROM        => 'lib/Net/Pixiv.pm',
+    ABSTRACT_FROM       => 'lib/Net/Pixiv.pm',
     PL_FILES            => {},
     PREREQ_PM => {
         'Test::More'            => 0,
@@ -20,5 +20,5 @@ WriteMakefile(
         'HTTP::Response'        => 0,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
-    clean               => { FILES => 'HTTP-Application-*' },
+    clean               => { FILES => 'Net-Pixiv-*' },
 );
