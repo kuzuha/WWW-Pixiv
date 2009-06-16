@@ -3,10 +3,10 @@ use warnings;
 use Module::Build;
 
 my $builder = Module::Build->new(
-    module_name         => 'Net::Pixiv',
+    module_name         => 'WWW::Pixiv',
     license             => 'perl',
     dist_author         => 'Kuzuha SHINODA <kuzuha01@hotmail.com>',
-    dist_version_from   => 'lib/Net/Pixiv.pm',
+    dist_version_from   => 'lib/WWW/Pixiv.pm',
     requires => {
         'Test::More'            => 0,
         'Test::Pod::Coverage'   => 0,
@@ -18,7 +18,7 @@ my $builder = Module::Build->new(
         'Config::Pit'           => 0,
         'HTTP::Response'        => 0,
     },
-    add_to_cleanup      => [ 'Net-Pixiv-*' ],
+    add_to_cleanup      => [ 'WWW-Pixiv-*' ],
 );
 
 $builder->create_build_script();

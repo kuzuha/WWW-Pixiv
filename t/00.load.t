@@ -1,7 +1,7 @@
 use Test::More tests => 1;
 
 BEGIN {
-use_ok( 'Net::Pixiv' );
+use_ok( 'WWW::Pixiv' );
 }
 
-diag( "Testing Net::Pixiv $Net::Pixiv::VERSION" );
+diag( "Testing WWW::Pixiv $WWW::Pixiv::VERSION" );

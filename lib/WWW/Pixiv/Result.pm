@@ -1,4 +1,4 @@
-package Net::Pixiv::Result;
+package WWW::Pixiv::Result;
 use strict;
 use Any::Moose;
 
@@ -44,7 +44,7 @@ __PACKAGE__->meta->make_immutable;
 use version;
 our $VERSION = qv('0.0.3');
 
-use Net::Pixiv::Illust;
+use WWW::Pixiv::Illust;
 use URI;
 use Web::Scraper;
 use URI::Escape;
@@ -135,7 +135,7 @@ sub get {
 	my $id = $res->{image}->[$illust_num];
 	$id =~ s|^.*/(\d+)[^.]*\.[^.]+$|$1|;
 	
-	Net::Pixiv::Illust->new(
+	WWW::Pixiv::Illust->new(
 			mech	=> $self->mech,
 			id		=> $id,
 	);
@@ -146,17 +146,17 @@ __END__
 
 =head1 NAME
 
-Net::Pixiv::Result - [One line description of module's purpose here]
+WWW::Pixiv::Result - [One line description of module's purpose here]
 
 
 =head1 VERSION
 
-This document describes Net::Pixiv::Result version 0.0.1
+This document describes WWW::Pixiv::Result version 0.0.1
 
 
 =head1 SYNOPSIS
 
-    use Net::Pixiv::Result;
+    use WWW::Pixiv::Result;
 
 =for author to fill in:
     Brief code example(s) here showing commonest usage(s).
@@ -215,7 +215,7 @@ $illust2 = $res->get(23);
     that can be set. These descriptions must also include details of any
     configuration language used.
   
-Net::Pixiv::Result requires no configuration files or environment variables.
+WWW::Pixiv::Result requires no configuration files or environment variables.
 
 
 =head1 DEPENDENCIES
@@ -255,7 +255,7 @@ None reported.
 No bugs have been reported.
 
 Please report any bugs or feature requests to
-C<bug-net-pixiv-result@rt.cpan.org>, or through the web interface at
+C<bug-www-pixiv-result@rt.cpan.org>, or through the web interface at
 L<http://rt.cpan.org>.
 
 

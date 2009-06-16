@@ -1,4 +1,4 @@
-package Net::Pixiv::Illust;
+package WWW::Pixiv::Illust;
 use strict;
 use Any::Moose;
 
@@ -134,17 +134,17 @@ __END__
 
 =head1 NAME
 
-Net::Pixiv::Illust - [One line description of module's purpose here]
+WWW::Pixiv::Illust - [One line description of module's purpose here]
 
 
 =head1 VERSION
 
-This document describes Net::Pixiv::Illust version 0.0.1
+This document describes WWW::Pixiv::Illust version 0.0.1
 
 
 =head1 SYNOPSIS
 
-    use Net::Pixiv::Illust;
+    use WWW::Pixiv::Illust;
 
 =for author to fill in:
     Brief code example(s) here showing commonest usage(s).
@@ -200,7 +200,7 @@ This document describes Net::Pixiv::Illust version 0.0.1
     that can be set. These descriptions must also include details of any
     configuration language used.
   
-Net::Pixiv::Illust requires no configuration files or environment variables.
+WWW::Pixiv::Illust requires no configuration files or environment variables.
 
 
 =head1 DEPENDENCIES
@@ -240,7 +240,7 @@ None reported.
 No bugs have been reported.
 
 Please report any bugs or feature requests to
-C<bug-net-pixiv-illust@rt.cpan.org>, or through the web interface at
+C<bug-www-pixiv-illust@rt.cpan.org>, or through the web interface at
 L<http://rt.cpan.org>.
 
 

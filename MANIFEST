@@ -3,9 +3,9 @@ Changes
 MANIFEST
 Makefile.PL
 README
-lib/Net/Pixiv.pm
-lib/Net/Pixiv/Illust.pm
-lib/Net/Pixiv/Result.pm
+lib/WWW/Pixiv.pm
+lib/WWW/Pixiv/Illust.pm
+lib/WWW/Pixiv/Result.pm
 t/00.load.t
 t/perlcritic.t
 t/pod-coverage.t

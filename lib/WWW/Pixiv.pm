@@ -1,4 +1,4 @@
-package Net::Pixiv;
+package WWW::Pixiv;
 use strict;
 use Any::Moose;
 
@@ -32,8 +32,8 @@ my $LOGIN_URI	= "$BASE_URI/";
 my $HOME_URI	= "$BASE_URI/mypage.php";
 my $SEARCH_URI	= "$BASE_URI/search.php";
 
-use Net::Pixiv::Result;
-use Net::Pixiv::Illust;
+use WWW::Pixiv::Result;
+use WWW::Pixiv::Illust;
 use Config::Pit;
 use Web::Scraper;
 use URI;
@@ -57,7 +57,7 @@ sub find_illust {
 	my $self = shift;
 	my $id = shift;
 	
-	Net::Pixiv::Illust->new(
+	WWW::Pixiv::Illust->new(
 		mech	=> $self->mech,
 		id		=> $id,
 	);
@@ -67,7 +67,7 @@ sub search_illust {
 	my $self = shift;
 	my @tags = @_;
 	
-	Net::Pixiv::Result->new(
+	WWW::Pixiv::Result->new(
 			mech	=> $self->mech,
 			tags	=> \@tags,
 			delay	=> $self->delay,
@@ -94,17 +94,17 @@ __END__
 
 =head1 NAME
 
-Net::Pixiv - [One line description of module's purpose here]
+WWW::Pixiv - [One line description of module's purpose here]
 
 
 =head1 VERSION
 
-This document describes Net::Pixiv version 0.0.1
+This document describes WWW::Pixiv version 0.0.1
 
 
 =head1 SYNOPSIS
 
-    use Net::Pixiv;
+    use WWW::Pixiv;
 
 =for author to fill in:
     Brief code example(s) here showing commonest usage(s).
@@ -169,7 +169,7 @@ Internal use only.
     that can be set. These descriptions must also include details of any
     configuration language used.
   
-Net::Pixiv requires no configuration files or environment variables.
+WWW::Pixiv requires no configuration files or environment variables.
 
 
 =head1 DEPENDENCIES
@@ -209,7 +209,7 @@ None reported.
 No bugs have been reported.
 
 Please report any bugs or feature requests to
-C<bug-net-pixiv@rt.cpan.org>, or through the web interface at
+C<bug-www-pixiv@rt.cpan.org>, or through the web interface at
 L<http://rt.cpan.org>.
 
 
